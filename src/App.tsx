@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles.css";
-import "react-sortable-tree/style.css";
+// import "./styles.css";
+// import "react-sortable-tree/style.css";
 
 import Tree from "./tree";
 

@@ -12,7 +12,9 @@ const dndBackend = isTouchDevice ? TouchBackend : HTML5Backend;
 export default function Tree() {
   const [treeData, setTreeData] = useState<TreeItem[]>([
     { title: "Chicken", expanded: true, children: [{ title: "Egg" }] },
-    { title: "Chicken", expanded: true, children: [{ title: "Egg" }] }
+    { title: "Chicken", expanded: true, children: [{ title: "Egg", expanded: true, children: [{
+      title: 'Wat'
+    }] }] }
   ]);
   return (
     <DndProvider backend={dndBackend}>
