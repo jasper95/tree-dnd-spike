@@ -4,9 +4,10 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { TouchBackend } from "react-dnd-touch-backend";
 import SortableTree, { TreeItem } from "react-sortable-tree";
 import Node from "./node";
+import MyPreview from "./preview";
 import TreeNode from "./tree-node";
 
-const isTouchDevice = !!("ontouchstart" in window || navigator.maxTouchPoints);
+export const isTouchDevice = !!("ontouchstart" in window || navigator.maxTouchPoints);
 const dndBackend = isTouchDevice ? TouchBackend : HTML5Backend;
 
 export default function Tree() {
@@ -35,6 +36,7 @@ export default function Tree() {
             }}
           />
         </div>
+        <MyPreview/>
       </div>
     </DndProvider>
   );

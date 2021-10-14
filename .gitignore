@@ -1,2 +1,4 @@
 node_modules
 .codesandbox
+yarn-error.log
+build
